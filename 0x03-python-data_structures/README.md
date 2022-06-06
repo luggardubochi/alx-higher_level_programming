@@ -1,0 +1,1 @@
+# python training on list 
