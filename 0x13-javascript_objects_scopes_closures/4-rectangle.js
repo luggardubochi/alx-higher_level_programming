@@ -1,9 +1,4 @@
 #!/usr/bin/node
-/**
- * defining a Rectangle class with the attributes
- * width and hieght If w or h is equal to 0 or
- * not a positive integer, it create an empty object
- */
 
 class Rectangle {
   constructor (w, h) {
@@ -20,15 +15,14 @@ class Rectangle {
   }
 
   rotate () {
-    const h = this.height;
+    const temp = this.height;
     this.height = this.width;
-    this.width = h;
+    this.width = temp;
   }
 
   double () {
-    this.width *= 2;
     this.height *= 2;
+    this.width *= 2;
   }
 }
-
 module.exports = Rectangle;
